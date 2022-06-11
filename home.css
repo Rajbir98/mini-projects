@@ -1,0 +1,80 @@
+:root {
+    --primary: #19171a;
+    --secondary: #201e21;
+    --main: #d8dee9;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Google Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: var(--main);
+}
+
+body {
+    background: var(--primary);
+    margin: 6rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    justify-content: center;
+}
+
+.card {
+    overflow: hidden;
+    background-color: var(--secondary);
+    position: relative;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 34rem;
+}
+
+.card .img {
+    position: relative;
+    background: linear-gradient(to right bottom, rgb(28, 202, 255), rgb(1, 41, 65));
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    margin: 3rem 2rem;
+}
+
+.txt p {
+    font: 1.2rem/1.5 'Google Sans', sans-serif;
+}
+
+.txt h2 {
+    color: #8bb3ee;
+    font: 1.4rem/1.5 'Google Sans', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+}
+
+@media screen and (min-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
