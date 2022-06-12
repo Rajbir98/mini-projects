@@ -4,11 +4,11 @@
     --main: #d8dee9;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: 'Google Sans', sans-serif;
+    font-family: 'Sintony', sans-serif;
     list-style: none;
     text-decoration: none;
     color: var(--main);
@@ -36,11 +36,18 @@ body {
 
 .card .img {
     position: relative;
-    background: linear-gradient(to right bottom, rgb(28, 202, 255), rgb(1, 41, 65));
     height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.blue {
+    background: linear-gradient(to right bottom, rgb(28, 202, 255), rgb(1, 41, 65));
+}
+
+.red {
+    background: linear-gradient(to right bottom, rgb(255, 28, 115), rgba(151, 5, 22, 0.856));
 }
 
 .txt {
